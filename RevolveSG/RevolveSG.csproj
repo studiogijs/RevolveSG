@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RailRevolveSGCommand.cs" />
     <Compile Include="RevolveSGCommand.cs" />
     <Compile Include="RevolveSGPlugIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

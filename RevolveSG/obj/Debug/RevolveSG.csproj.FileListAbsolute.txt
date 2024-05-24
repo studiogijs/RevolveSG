@@ -1,0 +1,6 @@
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\bin\RevolveSG.dll
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\bin\RevolveSG.pdb
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\obj\Debug\RevolveSG.csproj.AssemblyReference.cache
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\obj\Debug\RevolveSG.csproj.CoreCompileInputs.cache
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\obj\Debug\RevolveSG.dll
+C:\Users\gijsd\Documents\GitHub\RevolveSG\RevolveSG\obj\Debug\RevolveSG.pdb
