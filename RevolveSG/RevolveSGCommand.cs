@@ -197,12 +197,17 @@ namespace RevolveSG
 
         Line revline = new Line(linecrv.PointAtStart, linecrv.PointAtEnd);
         RevSurface rev = RevSurface.Create(curve, revline);
-        Brep brep = Brep.CreateFromRevSurface(rev, false, false);
+        if (rev == null) return false;
+
+        Brep brep= Brep.CreateFromRevSurface(rev, false, false);
+        if (brep == null) return false;
+
+        if (brep.Faces.SplitKinkyFaces() == false) return false;
 
         replay.Results[0].UpdateToBrep(brep, null);
         return true;
 
-    }
+        }
 
     /// <summary>
     /// Read a history record and extract the references for the antecedent objects.
