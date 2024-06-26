@@ -239,11 +239,15 @@ namespace RevolveSG
             Line revline = new Line(linecrv.PointAtStart, linecrv.PointAtEnd);
             NurbsSurface rev;
             rev = NurbsSurface.CreateRailRevolvedSurface(curve, railcurve, revline, false);
+            if (rev == null) return false;
+
             Brep brep = rev.ToBrep();
+            if (brep == null) return false;
+
+            if (brep.Faces.SplitKinkyFaces() == false) return false;
 
             replay.Results[0].UpdateToBrep(brep, null);
             return true;
-
         }
 
         /// <summary>
